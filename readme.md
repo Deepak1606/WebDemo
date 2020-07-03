@@ -1,3 +1,2 @@
 # YelpCamp
-
-### Refactored by Ian Schoonover
+### Created By Deepak
