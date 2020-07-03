@@ -1,0 +1,21 @@
+<%- include("../partials/header") %>
+    <a href="/users/<%= currentUser.id %>/edit"><button class ="btn btn-primary">Edit Details</button></a>
+    <h1>
+        Name: <span><%= currentUser.username %></span>
+    </h1>
+    <h1>
+        Email: <span><%= currentUser.email %></span>
+    </h1>
+    <h1>
+        Address: <span><%= currentUser.address %></span>
+    </h1>
+    <h1>
+        PinCode: <span><%= currentUser.pincode %></span>
+    </h1>
+    <h1>State:
+        <%= currentUser.state %>
+    </h1>
+    <h1>District:
+        <%= currentUser.district %>
+    </h1>
+    <%- include("../partials/footer") %>

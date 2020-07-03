@@ -1,0 +1,13 @@
+<h4>
+    <%= currentUser.username %>
+</h4>
+<form action="/users/<%= currentUser._id %>?_method=PUT" method="POST">
+    <label for="email">Email</label>
+    <input type="email" name="email" placeholder="email" value="<%= currentUser.email %>" required>
+    <label for="address">Address</label>
+    <input type="text" name="address" placeholder="address" value="<%= currentUser.address %>" required>
+    <input type="text" name="pincode" id="pincode" placeholder="pncode" value="<%= currentUser.pincode %>" required>
+    <input type="text" name="state" id="state" placeholder="state" value="<%= currentUser.state %>" required>
+    <input type="text" name="district" id="district" placeholder="district" value="<%= currentUser.district %>" required>
+    <button type="submit">Update Details</button>
+</form>
